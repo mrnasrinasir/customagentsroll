@@ -522,7 +522,7 @@ function showResult(a) {
     document.getElementById("rPrompt").textContent = a.prompt;
     // Reset to collapsed
     promptSection.classList.remove("open");
-    promptArrow.classList.remove("open");
+    if (promptArrow) promptArrow.classList.remove("open");
     promptToggle.innerHTML = '<span class="arrow" id="promptArrow">▶</span> Show prompt';
   } else {
     promptToggle.style.display = "none";
@@ -539,7 +539,7 @@ document.getElementById("promptToggle").addEventListener("click", () => {
   const isOpen = section.classList.contains("open");
   section.classList.toggle("open");
   const toggle = document.getElementById("promptToggle");
-  toggle.innerHTML = `<span class="arrow ${isOpen ? "" : "open"}">▶</span> ${isOpen ? "Show" : "Hide"} prompt`;
+  toggle.innerHTML = `<span class="arrow ${isOpen ? "" : "open"}" id="promptArrow">▶</span> ${isOpen ? "Show" : "Hide"} prompt`;
 });
 
 /* ── Copy prompt ── */
