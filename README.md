@@ -17,7 +17,7 @@ A delightful slot-machine-style randomiser that picks one agent from the [365 Cu
 
 Open `index.html` in any modern browser (Chrome, Safari, Firefox). That's it.
 
-Or visit the live site: _[Vercel URL to be added after first deploy]_
+Or visit the live site:https://customagentsroll.vercel.app/
 
 ## Refreshing data
 
