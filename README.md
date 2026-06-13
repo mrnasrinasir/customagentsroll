@@ -39,4 +39,4 @@ The footer shows "Data as of [date]" so staleness is always visible.
 
 ---
 
-Built for **Nasri OS**.
+Built by [Nasri](https://nasrinasir.com).
